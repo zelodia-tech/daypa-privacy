@@ -28,11 +28,11 @@
 <main>
 <header>
   <h1>Day-P.A Privacy Policy</h1>
-  <p class="updated">Last updated: 23 November 2026</p>
+  <p class="updated">Last updated: 26 November 2026</p>
 </header>
 
 <div class="card">
-  <p><strong>In short:</strong> Day-P.A is a family organiser. We keep only what the app needs to work for your household. We have no advertising, no tracking and no analytics, and we never sell your data. Children do not need an email address or a password. A parent can delete the whole account at any time from inside the app.</p>
+  <p><strong>In short:</strong> Day-P.A is a family organiser. We keep only what the app needs to work for your household. We have no advertising, no tracking and no analytics, and we never sell your data. The only extra information we receive is anonymous crash reports, so we can fix problems (section 2). Children do not need an email address or a password. A parent can delete the whole account at any time from inside the app.</p>
 </div>
 
 <h2>1. Who we are</h2>
@@ -45,25 +45,28 @@
   <tr><th>What</th><th>Why</th></tr>
   <tr><td>Adult account: email address and password (the password is stored securely, not readable by us)</td><td>To let adults sign in and to run the account.</td></tr>
   <tr><td>Family profiles: a first name, a role (for example Mum, Dad, Teen, Child), and a picture (a built-in avatar, a colour, or a photo a parent or the person chooses to upload)</td><td>To show who each chore, event and list belongs to.</td></tr>
-  <tr><td>Things you add: chores, calendar events, lists and list items, shopping items, meal plans, saved meals, wish list items, and any notes or web links you attach</td><td>This is the content of the app. It is shared with the household members who are allowed to see it.</td></tr>
+  <tr><td>Things you add: chores, calendar events, repeat settings (for example "every Thursday"), birthdays (a name, a day and month, and optionally a year), lists and list items, shopping items, meal plans, saved meals, wish list items, and any web links you attach</td><td>This is the content of the app. It is shared with the household members who are allowed to see it.</td></tr>
+  <tr><td>Notes you write</td><td>Notes are private. Only the person who wrote a note can see it.</td></tr>
+  <tr><td>Anonymous crash reports (only from the released app): the app and Android version, the phone model, and technical details of the error</td><td>To find and fix crashes. They contain no names, email addresses or content from your family. See below.</td></tr>
   <tr><td>A notification address for your phone (a "push token") and the type of phone</td><td>To send notifications, such as "a new chore was assigned to you".</td></tr>
   <tr><td>Invite codes (stored in a scrambled form, used once, expire after 24 hours)</td><td>To let a family member join a household safely.</td></tr>
   <tr><td>If you use the voice feature: the text of what you said</td><td>To turn a spoken sentence into events, chores, list items and meals. See section 6.</td></tr>
 </table>
 </div>
-<p>We do not collect your location, contacts, advertising identifiers or browsing history. We do not run analytics or crash-tracking tools. Like most online services, our providers keep routine technical logs (such as IP address, device type and error messages) for security and to fix problems. If a voice request cannot be processed, the text of that request may briefly appear in these logs, and logs are cleared automatically after a short time.</p>
+<p>We do not collect your location, contacts, advertising identifiers or browsing history. We do not run analytics. If the app crashes, it can send an anonymous crash report to our crash-reporting provider, Sentry, whose servers are in the United States. We have set it up not to send personal information and not to store IP addresses. Like most online services, our providers keep routine technical logs (such as IP address, device type and error messages) for security and to fix problems. If a voice request cannot be processed, the text of that request may briefly appear in these logs, and logs are cleared automatically after a short time.</p>
 
 <h2>3. Children</h2>
 <ul>
   <li>Adult accounts are for people aged 18 or over. Day-P.A is a tool for parents and carers. It is not a service directed at children to sign up to by themselves.</li>
   <li>A parent creates each child's profile. We only ask for a first name (or nickname), a role and a picture. We do not ask for a child's email address, password, date of birth, location or contact details.</li>
   <li>A child's phone joins using a one-time code created by a parent. The child's phone is given an anonymous sign-in with no personal details.</li>
-  <li>Children only see what they need: their own chores, the calendar, their own picture, and their own wish list. They cannot see shopping lists, adults' lists or other children's wish lists. Parents can mark wish list items as bought without the child seeing.</li>
+  <li>Children only see what they need: their own chores, the calendar and birthdays, their own picture, their own wish list and their own private notes. They cannot see shopping lists, adults' lists or other children's wish lists. Parents can mark wish list items as bought without the child seeing.</li>
+  <li>Teenagers (a role a parent chooses) can also add and remove their own chores and calendar events. Parents are notified when a teenager adds or removes a chore, or removes an event.</li>
   <li>A parent can edit, reconnect or remove a child's profile at any time, or delete the whole account (section 8).</li>
 </ul>
 
 <h2>4. Phone calendar</h2>
-<p>If you switch on phone calendar features, Day-P.A can (a) show your phone's calendar events inside the app and (b) copy Day-P.A events into a calendar called "Day-P.A" on your phone. Reading your phone's events happens on your phone only; those events are <strong>not</strong> uploaded to our servers. You can switch this off at any time, and you can withdraw the permission in your phone's settings.</p>
+<p>If you switch on phone calendar features, Day-P.A can (a) show your phone's calendar events inside the app and (b) copy Day-P.A events and birthdays into a calendar on your phone. By default this is a calendar called "DayPA" that stays on your phone. You can instead choose another calendar on your phone, such as your Google calendar. In that case Google (or the calendar provider you chose) then syncs those copies to your account and your other devices, under its own privacy policy. Reading your phone's events happens on your phone only; those events are <strong>not</strong> uploaded to our servers. You can switch this off at any time, and you can withdraw the permission in your phone's settings.</p>
 
 <h2>5. Who handles your data for us</h2>
 <p>We use a small number of trusted service providers ("processors") to run the app. They only handle data to provide their service to us:</p>
@@ -71,13 +74,15 @@
   <li><strong>Supabase</strong>: sign-in, our database and photo storage.</li>
   <li><strong>Expo (Expo Application Services), Google Firebase Cloud Messaging and the Apple Push Notification service</strong>: delivering push notifications to Android phones and iPhones.</li>
   <li><strong>Anthropic</strong>: understanding what you said when you use the voice feature (section 6).</li>
+  <li><strong>Resend</strong>: sending account emails, such as the confirmation and password reset emails, to adults.</li>
+  <li><strong>Sentry</strong> (servers in the United States): receiving anonymous crash reports (section 2).</li>
   <li><strong>Speech recognition built into your phone</strong>: Google on Android and Apple on iPhone, turning your voice into text (section 6).</li>
 </ul>
 <p>Some of these providers process data outside the European Economic Area, for example in the United States. Where they do, the transfer relies on safeguards such as the European Commission's standard contractual clauses. We do not sell your data and we do not share it for advertising.</p>
 
 <h2>6. Voice feature</h2>
 <ul>
-  <li>Only adults can use it, and only when they tap the microphone.</li>
+  <li>It only starts when someone taps the microphone. Adults can use it everywhere in the app. Teenagers and children can use it only on the screens where they are allowed to add things themselves (their own events, wish list and notes, and for teenagers their own chores). Parents can see and manage a child's profile at any time.</li>
   <li>Your voice is turned into text by the speech recognition service built into your phone: Google's on Android and Apple's on iPhone. Depending on your phone and its settings, the audio may be processed on the device or sent to Google or Apple to be turned into text. Their handling of that audio is covered by their own privacy policies. Day-P.A itself does not record or store your audio.</li>
   <li>You can read and edit the text before anything happens. When you tap to continue, the text, today's date, and the names of your family members and lists (so it can match them) are sent to our AI provider, Anthropic, to work out what to add. We do not send your email address or account details.</li>
   <li>Nothing is added until you tick what you want and confirm.</li>
@@ -93,7 +98,7 @@
 <h2>8. Keeping and deleting your data</h2>
 <ul>
   <li>We keep your data while your account exists.</li>
-  <li><strong>Delete your account in the app:</strong> open <em>Family</em>, scroll to the bottom and tap <em>Delete my account</em>. If you are the owner, this permanently deletes the whole household: all profiles, chores, events, lists, meals, photos and every phone's sign-in. If you are another parent, it deletes your own account and your private lists, and shared items stay with the family. This cannot be undone.</li>
+  <li><strong>Delete your account in the app:</strong> open <em>Settings</em>, go to <em>Account</em> and tap <em>Delete my account</em>. If you are the owner, this permanently deletes the whole household: all profiles, chores, events, lists, meals, photos and every phone's sign-in. If you are another parent, it deletes your own account and your private lists, and shared items stay with the family. This cannot be undone.</li>
   <li>If you cannot use the app, email <a href="mailto:info@circleofgold.ie">info@circleofgold.ie</a> from your account email address and we will help.</li>
   <li>Backups kept by our providers may take a short time to clear after deletion.</li>
 </ul>
